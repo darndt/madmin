@@ -59,7 +59,7 @@ module Madmin
     end
 
     def resource_by_name(name)
-      "#{name}Resource".constantize
+      "#{name}Resource".demodulize.constantize
     end
 
     def resources
